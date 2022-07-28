@@ -48,6 +48,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.double-spacing{
+    letter-spacing: .4rem;
+}
 
 
 
@@ -59,12 +62,10 @@ font-size: 45px;
 font-weight: 1500;
 }
 
-.flex-container{
-    padding-left: 50px;
+.flex-container{ 
     display:flex;
     align-items: center;
-    justify-content: center;
-    min-height: 1000px;
+    justify-content: center;  
 }
 .card-container{
     display: flex;
@@ -94,11 +95,11 @@ font-weight: 1500;
 }
 .card-p>p{
     color:hsl(228, 12%, 48%);
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Montserrat', serif;
     font-weight: 500;
-    line-height: 1.5;
-    word-spacing: 1.5;
+    line-height: 2;
+    letter-spacing: 1.5;
 }
 
 .uppercase{
@@ -112,6 +113,10 @@ font-weight: 1500;
     color: white;
     border-radius: 10px;;
     border: none;
+
+}
+.card-button:hover{
+    cursor: pointer;
 }
 .green-money{
     color: hsl(158, 36%, 37%);
@@ -132,13 +137,23 @@ font-weight: 1500;
     }
 
     .card-container{
-        width:350px;
+        width:400px;
     }
     .card-image{
     border-bottom-left-radius: 0;
     border-top-right-radius: 10px;
     height: 300px;
+    width: 400px;
     background-position: left;
     }
+    .product-preview-header{
+       margin-top: .5rem; 
+       width: 350px;
+       height: 150px;
+    }
+    .card-button{
+        margin: .5rem 0;
+    }
+
 
 }
