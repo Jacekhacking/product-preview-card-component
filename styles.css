@@ -123,3 +123,22 @@ font-weight: 1500;
 .cross-through{
     text-decoration: line-through;
 }
+
+
+@media(max-width: 700px){
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .card-container{
+        width:350px;
+    }
+    .card-image{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    height: 300px;
+    background-position: left;
+    }
+
+}
